@@ -1,6 +1,6 @@
 import { TCat } from "../types/types";
 
-const API_ORIGIN = process.env.API_ORIGIN || "https://api.thecatapi.com/v1/images/search"
+const API_ORIGIN = process.env.API_ORIGIN
 
 export const getCat = async (): Promise<TCat[]> => {
   const response = await fetch(API_ORIGIN);
